@@ -10,16 +10,16 @@
     <!-- google font  -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-<style>
-
-.font-lato{
-    font-family: 'Lato', sans-serif;
-}
-    
-</style>
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 
     <!-- font awesome  -->
 
@@ -33,36 +33,117 @@
     <!-- custom style  -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-primary': '#F85559',
+                        'color-sec':' #12121299'
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
 </head>
 
 <body class="font-lato">
-<header class="max-w-screen-xl  mx-auto">
-<nav>
-<h1> Hello</h1>
-</nav>
+    <header class="max-w-screen-xl  mx-auto">
+        <!-- navbar  -->
+
+        <!-- Hero section  -->
+        <section class="mx-4 ">
+
+            <div class="hero min-h-screen" style="background-image: url(./images/banner2.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="">
+                        <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br>doorstep</h1>
+                        <p class="mb-5 font-medium text-xl">We supply highly quality organic products</p>
+                        <button class="rounded-xl bg-color-primary py-5 px-7">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+      
+    </header>
+
+    <main class="max-w-screen-xl  mx-auto">
+
+          <!-- daily deals section  -->
+<section class="my-24 mx-auto">
+<!-- intro and count down  -->
+<div class="flex flex-col justify-between gap- mb-20 md:flex-row">
+    <div class=" border">
+<h3 class="text-5xl font-extrabold pb-6">Deal of the day</h3>
+<p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+    </div>
+
+    <div class="  border bg-white">
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex text-color-sec flex-col">
+              <span class="countdown  text-5xl text-black font-extrabold">
+                <span style="--value:29;"></span>:
+              </span>
+              days
+            </div> 
+            <div class="flex  text-color-sec flex-col">
+              <span class="countdown  text-5xl text-black font-extrabold">
+                <span style="--value:15;"></span>:
+              </span>
+              hours
+            </div> 
+            <div class="flex  text-color-sec flex-col">
+              <span class="countdown  text-5xl text-black font-extrabold">
+                <span style="--value:29;"></span>:
+              </span>
+              min
+            </div> 
+            <div class="flex  text-color-sec flex-col">
+              <span class="countdown  text-5xl text-black font-extrabold">
+                <span style="--value:08;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+    </div>
+</div>
+
+<!-- cards  -->
+
+<div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+
+    <div class="card bg-white  items-center shadow-xl">
+        <figure><img src="./images/fruit6.png" alt="fruit" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">12.90$ - 18.85$</h2>
+          </div>
+          <div class="text-center">
+            <h4>Apple</h4>
+            <div class="rating ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+          </div>
+          <p class="text-color-primary pt-20">Details</p>
+        </div>
+      </div>
 
 
 
-</header>
+</div>
 
-<main class="max-w-screen-xl  mx-auto">
+</section>
+    </main>
 
-</main>
-
-<footer class="max-w-screen-xl  mx-auto" >
+    <footer class="max-w-screen-xl  mx-auto">
 
 
-</footer>
+    </footer>
 
 
 
